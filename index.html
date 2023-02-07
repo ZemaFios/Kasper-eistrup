@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Kasper Eistrup</title>
+  </head>
+  <body>
+    <nav id="myTopNav" class="topNav">
+      <ul id="main-nav">
+        <li class="nav-link"><a href="#forside">Forside</a></li>
+        <li class="nav-link"><a href="#værker">Værker</a></li>
+        <li class="nav-link"><a href="#galleri">Galleri</a></li>
+        <li class="nav-link"><a href="#about">Om Eistrup</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" id="hamburger">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    <header id="forside">
+      <h1>Kasper Eistrup</h1>
+      <img src="img/article_5051.jpg" alt="Header Billede" />
+    </header>
+
+    <h1 id="værker">Værker</h1>
+    <div class="container-værker">
+      <div class="left">
+        <img src="img/29178.png" alt="" />
+        <figcaption>Kasper Eistrup: <span>Pater Elephantus, 2014.</span></figcaption>
+        <p>
+          Som billedkunstner har Kasper Eistrup oftest arbejdet med den
+          menneskelige relation som rød tråd. Han har i sit arbejde, der
+          inkluderer oliemaleri, litografi, tegning, kobbertryk, plakatkunst og
+          installationer, altid kredset omkring karakterer, som balancerer på
+          kanten af deres egen menneskelighed.
+        </p>
+      </div>
+      <div class="right">
+        <img src="img/29182.png" alt="" />
+        <figcaption>Kasper Eistrup: <span>Mater Elegantus, 2015.</span></figcaption>
+        <p>
+          De skrøbelige og vrangvendte motiver, ofte skildret med et drømmende
+          blik i øjnene, er indkaplet i abstrakte og kaotiske rum, hvor de lever
+          blandt forvirrende strukturer og skjulte detaljer.
+        </p>
+      </div>
+    </div>
+
+    <div class="container-gallery" id="galleri">
+      <h1>Galleri</h1>
+      <div class="gallery">
+        <img src="img/29177.png" alt="" />
+        <img src="img/29180.png" alt="" />
+        <img src="img/29183.png" alt="" />
+        <img src="img/29184.png" alt="" />
+        <img src="img/29176.png" alt="" />
+        <img src="img/kasper-eistrup-an-ocean-away.png" alt="" />
+        <img src="img/29179.png" alt="" />
+        <img src="img/29181.png" alt="" />
+      </div>
+    </div>
+    <div class="about" id="about">
+      <img src="img/kasper-eistrup.jpg" alt="Kasper Eistrup" />
+      <div class="about-text">
+        <h1>Omkring Eistrup</h1>
+        <p>
+          Allerede fra 9-års alderen fyldte tegningen meget i Kasper Eistrups
+          liv, men den brede offentlighed stiftede oprindeligt bekendtskab med
+          Kasper Eistrups kunst i forbindelse med hans dybe involvering i
+          Kashmirs artwork og visuelle univers. For Kasper Eistrup var
+          udarbejdelsen af cover art og det grafiske design, en naturlig
+          forlængelse af musikken, og en sammensmeltning af udtryksformer der
+          har været med til at forme hans nuværende visuelle udtryk.
+        </p>
+        <p>
+          Eistrups kunst er rodfæstet i tegningen, med en ofte gennemgående
+          tilstedeværelse af ansigter og skikkelser i den rastløse og hektiske
+          streg. Med tiden har stærke grafiske elementer og sproglige
+          brudstykker indfundet sig, og sammen med en fascination af stærke
+          farver, udfordret og udviklet udtrykket.
+        </p>
+        <p>
+          Siden hen har Kasper Eistrup etableret sig som billedkunster med
+          værker, der omfatter både tegning, maleri og mixed media, samt en
+          omfangsrig produktion af litografiske tryk og kobberstik.
+        </p>
+        <h4><a href="https://da.wikipedia.org/wiki/Kasper_Eistrup" target="_blank">Læs mere her ...</a></h>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2022 - Søren Nielsen</p>
+    </footer>
+
+    <script>
+      let burgerMenu = document.getElementById("hamburger");
+      let navUl = document.getElementById("main-nav");
+
+      burgerMenu.addEventListener("click", () => {
+        navUl.classList.toggle("show");
+      });
+
+      navUl.addEventListener("click", () => {
+        navUl.classList.remove("show");
+      });
+    </script>
+  </body>
+</html>
